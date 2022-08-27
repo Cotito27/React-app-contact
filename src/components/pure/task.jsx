@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Task } from '../../../models/task.class';
-
+import { Task } from '../../models/task.class';
 
 const TaskComponent = ({ task }) => {
   return (
     <div>
-      <h2>
+      <h1>
         Nombre: {task.name}
-      </h2>
+      </h1>
       <h3>
         Descripción: {task.description}
       </h3>
