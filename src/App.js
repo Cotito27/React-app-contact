@@ -5,6 +5,7 @@ import GreetingStyled from './components/pure/greetingStyled';
 import Clock from './components/pure/clock';
 import { useState } from 'react';
 import ContactListComponent from './components/container/contact_list';
+import Rectangle from './components/pure/rectangle';
 
 function App() {
   const [visibleClock, setVisibleClock] = useState(true);
@@ -12,10 +13,11 @@ function App() {
     <div className="App">
         {/* Componente */}
         {/* <TaskListComponent/> */}
-        <ContactListComponent/>
+        {/* <ContactListComponent/> */}
         {/* <GreetingStyled name={'Martin'} /> */}
         {/* {visibleClock && <Clock/>} */}
         {/* <button onClick={() => setVisibleClock(!visibleClock)}>Toggle Clock</button> */}
+        <Rectangle />
     </div>
   );
 }
